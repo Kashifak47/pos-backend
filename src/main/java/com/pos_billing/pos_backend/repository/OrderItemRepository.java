@@ -1,0 +1,12 @@
+package com.pos_billing.pos_backend.repository;
+
+import com.pos_billing.pos_backend.model.OrderItem;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+    List<OrderItem> findByOrderId(Long orderId);
+
+}
