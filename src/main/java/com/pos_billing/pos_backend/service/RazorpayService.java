@@ -33,10 +33,10 @@ public class RazorpayService {
     private final OrderRepository orderRepository;
     private final OrderItemRepository orderItemRepository;
 
-    @Value("${razorpay.key}")
+    @Value("${RAZORPAY_KEY_ID}")
     private String razorKey;
 
-    @Value("${razorpay.secret}")
+    @Value("${RAZORPAY_KEY_SECRET}")
     private String razorSecret;
 
     // =================================================================================
