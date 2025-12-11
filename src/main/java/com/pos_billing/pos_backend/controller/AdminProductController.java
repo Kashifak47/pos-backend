@@ -18,7 +18,7 @@ public class AdminProductController {
     private final ProductService productService;
 
     // GET ALL
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<Product>> getAll() {
         return ResponseEntity.ok(productService.getAll());
     }
