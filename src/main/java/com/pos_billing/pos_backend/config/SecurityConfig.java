@@ -40,6 +40,7 @@ public class SecurityConfig {
                         // ---------- PUBLIC ----------
                         .requestMatchers("/api/users/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/payment/create").permitAll()
+                        .requestMatchers("/health").permitAll()
 
                         // ---------- CUSTOMER ----------
                         .requestMatchers(HttpMethod.POST, "/api/payment/verify-and-create").hasRole("CUSTOMER")
